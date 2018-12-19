@@ -27,11 +27,4 @@ public class DeleteNode {
         return sur.next;
     }
 }
-class ListNode{
-    int data;
-    ListNode next;
-    public ListNode(int data) {
-        this.data = data;
-    }
 
-}
