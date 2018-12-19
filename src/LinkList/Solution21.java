@@ -42,4 +42,30 @@ public class Solution21 {
 
         return temp.next;
     }
+
+    /**
+     * 思路2：使用递归，将两个链表的结点逐一比较值的大小，数值小的结点为新的链表的结点，然后将剩下的结点继续比较，找出下一个节点
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode mergeTwoLists02(ListNode l1, ListNode l2) {
+
+        if(l1 == null){
+            return l2;
+        }
+        if(l2 == null){
+            return l1;
+        }
+
+        ListNode newList;
+        if(l1.val <= l2.val){
+            newList = l1;
+            newList.next = mergeTwoLists02(l1.next,l2);
+        }else{
+            newList = l2;
+            newList.next = mergeTwoLists02(l1,l2.next);
+        }
+        return newList;
+    }
 }
