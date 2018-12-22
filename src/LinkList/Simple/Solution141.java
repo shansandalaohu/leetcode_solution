@@ -1,4 +1,4 @@
-package LinkList;
+package LinkList.Simple;
 
 /**
  * @author yzh

@@ -1,4 +1,4 @@
-package LinkList;
+package LinkList.Simple;
 
 /**
  * 翻转链表

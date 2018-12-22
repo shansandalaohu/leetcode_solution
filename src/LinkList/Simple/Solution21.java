@@ -1,4 +1,4 @@
-package LinkList;
+package LinkList.Simple;
 
 /**
  * 题目：合并两个有序链表
